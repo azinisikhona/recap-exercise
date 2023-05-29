@@ -1,6 +1,6 @@
 // Function to convert Celsius to Fahrenheit
 function celsiusToFahrenheit(celsius) {
-    let Temperature = (temperature * 9/5) + 32;
+    let Temperature = (temperature * 9/5) + 32 + "°F";
     console.log(Temperature);
     let output = document.getElementById("output");
     output.value = Temperature;
@@ -8,8 +8,10 @@ function celsiusToFahrenheit(celsius) {
   
 // Function to convert Fahrenheit to Celsius
 function fahrenheitToCelsius(fahrenheit) {
-    let Temperature = (temperature -32) * 5/9;
+    let Temperature = (temperature -32) * 5/9 + "°C";
     console.log(Temperature);
+    let output = document.getElementById("output");
+    output.value = Temperature;
 }
   
 // Prompt the user for input
